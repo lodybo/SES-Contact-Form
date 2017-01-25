@@ -1,0 +1,23 @@
+{
+  "name": "ses-contact-form",
+  "version": "0.0.1",
+  "description": "Contact Form sending e-mail through AWS Simple Email Service experiment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server ./ -p 9001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lodybo/SES-Contact-Form.git"
+  },
+  "author": "Lody Borgers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lodybo/SES-Contact-Form/issues"
+  },
+  "homepage": "https://github.com/lodybo/SES-Contact-Form#readme",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}
