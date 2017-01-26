@@ -10,32 +10,41 @@
     </head>
 
     <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-sm-2">
-                    <form>
-                    <div class="form-group">
-                        <label for="nameInput">Name</label>
-                        <input type="text" class="form-control" id="nameInput" placeholder="Name">
-                    </div>
+        <div class="container" ng-app="sesApp">
+            <div class="row" ng-controller="sesCtrl">
+                <div class="col-sm-8 col-sm-offset-2" style="margin-top: 25%">
+                    <form style="margin-bottom: 25px">
+                        <div class="form-group">
+                            <label for="nameInput">Name</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="Name">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="emailInput">Email</label>
-                        <input type="email" class="form-control" id="emailInput" placeholder="Email">
-                    </div>
+                        <div class="form-group">
+                            <label for="emailInput">Email</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Email">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="messageInput">Message</label>
-                        <textarea id="messageInput" class="form-control" rows="3" cols="10"></textarea>
-                    </div>
+                        <div class="form-group">
+                            <label for="messageInput">Message</label>
+                            <textarea id="messageInput" class="form-control" rows="3" cols="10"></textarea>
+                        </div>
 
-                    <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="submit" class="btn btn-default">Submit</button>
                     </form>
+
+                    <div class="alert alert-success" role="alert" ng-show="toggles.success">
+                        Form submitted.
+                    </div>
+
+                    <div class="alert alert-danger" role="alert" ng-show="toggles.error">
+                        Something went wrong while submitting the form.
+                    </div>
                 </div>
             </div>
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-resource.min.js"></script>
+        <script src="app.js"></script>
     </body>
 </html>

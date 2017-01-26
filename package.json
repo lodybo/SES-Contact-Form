@@ -1,6 +1,6 @@
 {
   "name": "ses-contact-form",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Contact Form sending e-mail through AWS Simple Email Service experiment",
   "main": "index.js",
   "scripts": {
